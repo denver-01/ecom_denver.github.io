@@ -1,0 +1,235 @@
+/*Style Reset*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/*Global*/
+a{
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section{
+    padding: 100px 0px;
+}
+
+/*Nav Style*/
+.navbar{
+    position: fixed;
+    z-index: 999;
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .max-width .navbar-btn{
+    display: none;
+}
+
+.navbar .max-width .menu li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .max-width .menu li a{
+    margin-left: 25px;
+    color: white;
+}
+
+.navbar .max-width .navbar-title{
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+
+.navbar .max-width .navbar-title p{
+    color: white;
+}
+
+.navbar .max-width .navbar-title span{
+    color: crimson;
+}
+
+/*Home*/
+
+.home{
+    height: 500px;
+    background-color: #111;
+    background-attachment: fixed;
+}
+
+.home .max-width{
+    margin-top: 80px;
+}
+
+.home .max-width .text-2{
+    font-size: 1.7em;
+    
+}
+
+.home .max-width .text-3{
+    font-size: 1.4em;
+}
+
+.home .max-width .text-3 span{
+    color: crimson;
+}
+
+/* Category */
+
+.category{
+    min-height: 300px;
+    padding: 100px 0px;
+    background-color: #333;
+}
+
+.category .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category .max-width .category-box{
+    width: 30%;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 55px 0px;
+    text-align: center;
+} 
+
+.category .max-width .category-box svg{
+    height: 50px;
+} 
+
+.category .max-width .category-box span{
+    font-size: 1.2em;
+    margin-top: 15px;
+} 
+
+/*Discount*/
+
+.discount{
+    background-color: #333;
+    padding: 50px 0px;
+    min-height: 300px;
+}
+
+.discount .max-width{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discount .max-width .discount-title{
+    margin: 10px 0px;
+}
+
+.discount .max-width .discount-navbar{
+    background-color: #222;
+    border-radius: 5px;
+    border: 1px solid black;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+
+.discount .max-width .discount-btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+.discount .max-width .discount-btn:hover{
+    background-color: crimson;
+}
+
+
+.discount .max-width .discount-content{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.discount .max-width .discount-content .content{
+    width: 250px;
+    background-color: #111;
+    border: 1px solid white;
+    height: 300px;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .navbar .max-width .navbar-btn{
+        display: block;
+    }
+
+    .navbar .max-width .menu{
+        display: none;
+    }
+
+    .home .max-width .text-2{
+        font-size: 1.1em;
+    }
+
+    .category{
+        padding: 50px;
+    }
+
+    .category .max-width .category-box{
+        padding: 10px 0px;
+    } 
+
+    .category .max-width .category-box span{
+        margin: 0;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+
+    .category{
+        padding: 30px;
+    }
+
+    .category .max-width{
+        flex-direction: column;
+    }
+
+    .category .max-width .category-box{
+        margin-top: 10px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+
+    .discount .max-width{
+        padding: 15px;
+    }
+
+    .discount .max-width .discount-content{
+        justify-content: center;
+    }
+}
+
